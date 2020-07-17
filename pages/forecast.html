@@ -1,0 +1,22 @@
+Forecast for <b>{{city}}</b> is below ,<br><br>
+
+<!-- {{weatherResult.dt}}<br>
+
+{{weatherResult.main.temp}} -->
+
+
+
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><b>Date/Time:</b> {{convertToDate(weatherResult.dt) | date: 'MMM d, y'}}</h3>
+                </div>
+                <div class="panel-body">
+                    <b>Average temperature:</b> {{convertToCelcius(weatherResult.main.temp)}}C
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
